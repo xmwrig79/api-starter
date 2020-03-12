@@ -1,8 +1,7 @@
-import requests
+from pyfiglet import Figlet
 
-URL = "http://api.open-notify.org/astros.json"
+fig = Figlet(font='graffiti')
+banner = fig.renderText("Naruto Resistances")
 
-res = requests.get(URL) # get the data
-res = res.json() # convert data to Python format
+print(banner)
 
-print(res)
